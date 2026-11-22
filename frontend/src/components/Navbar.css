@@ -1,0 +1,826 @@
+
+/* =====================================================
+
+   NAVBAR - PROFESSIONAL DESIGN
+===================================================== */
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #e8edf5;
+
+    box-shadow: 0 4px 20px rgba(15, 35, 70, 0.06);
+
+    box-sizing: border-box;
+
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+/* HAMBURGER */
+
+.navbar-menu-button {
+  width: 42px;
+  height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e3e8f1;
+    border-radius: 11px;
+
+    background: #f7f9fc;
+    color: #263653;
+
+    font-size: 22px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+}
+
+.navbar-menu-button:hover {
+  background: #edf3ff;
+  color: #315bea;
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+
+   BRAND
+===================================================== */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+    color: #17243d;
+
+    text-decoration: none;
+
+    font-size: 19px;
+    font-weight: 850;
+    letter-spacing: -0.3px;
+
+    white-space: nowrap;
+}
+
+.navbar-brand:first-letter {
+  font-size: 21px;
+}
+
+.navbar-brand:hover {
+  color: #315bea;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+    height: 100%;
+}
+
+
+/* =====================================================
+   DASHBOARD BUTTONS
+===================================================== */
+
+.navbar-dashboard {
+  height: 40px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 14px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 750;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+}
+
+
+/* PROVIDER */
+
+.provider-dashboard-link {
+  color: #315bea;
+  background: #edf3ff;
+  border: 1px solid #dbe6ff;
+}
+
+.provider-dashboard-link:hover {
+  color: white;
+  background: #315bea;
+  transform: translateY(-1px);
+}
+
+
+/* ADMIN */
+
+.admin-dashboard-link {
+  color: #6941c6;
+  background: #f4efff;
+  border: 1px solid #e7dcff;
+}
+
+.admin-dashboard-link:hover {
+  color: white;
+  background: #6941c6;
+  transform: translateY(-1px);
+}
+
+/* =====================================================
+   LOGIN / REGISTER
+===================================================== */
+
+.navbar-login-link,
+.navbar-register-link {
+  height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.navbar-login-link {
+  color: #315bea;
+  background: transparent;
+}
+
+.navbar-login-link:hover {
+  background: #edf3ff;
+}
+
+.navbar-register-link {
+  color: white;
+  background: #315bea;
+}
+
+.navbar-register-link:hover {
+  background: #2449c8;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.navbar-profile {
+  position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* AVATAR */
+
+.navbar-avatar {
+  width: 42px;
+  height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: linear-gradient(
+      135deg,
+      #315bea,
+      #6385ff
+    );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 850;
+
+    cursor: pointer;
+
+    box-shadow:
+      0 5px 15px rgba(49, 91, 234, 0.25);
+
+    transition: 0.2s ease;
+}
+
+.navbar-avatar:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 8px 20px rgba(49, 91, 234, 0.32);
+}
+
+
+/* =====================================================
+   PROFILE DROPDOWN
+===================================================== */
+
+.profile-dropdown {
+  position: absolute;
+
+    top: calc(100% + 12px);
+    right: 0;
+
+    width: 235px;
+
+    padding: 10px;
+
+    background: white;
+
+    border: 1px solid #e5eaf2;
+    border-radius: 16px;
+
+    box-shadow:
+      0 18px 45px rgba(16, 35, 65, 0.15);
+
+    animation: navbarDropdown 0.18s ease;
+}
+
+@keyframes navbarDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+/* PROFILE HEADER */
+
+.profile-header {
+  padding: 12px 12px 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    border-bottom: 1px solid #edf0f5;
+
+    margin-bottom: 6px;
+}
+
+.profile-header strong {
+  color: #17243d;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.profile-header span {
+  color: #8a95a8;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+
+/* DROPDOWN LINKS */
+
+.profile-dropdown a,
+.profile-dropdown button {
+  width: 100%;
+  min-height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    border: 0;
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: #33415c;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+.profile-dropdown a:hover {
+  background: #edf3ff;
+  color: #315bea;
+}
+
+.profile-dropdown button:hover {
+  background: #fff0f0;
+  color: #d92d20;
+}
+
+
+/* =====================================================
+   LANGUAGE
+===================================================== */
+
+.navbar-language {
+  height: 40px;
+
+    padding: 0 13px;
+
+    border: 1px solid #e1e7f0;
+    border-radius: 10px;
+
+    background: #f8faff;
+    color: #4b5870;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.navbar-language:hover {
+  background: #edf3ff;
+  color: #315bea;
+  border-color: #d6e2ff;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.navbar-mobile-menu {
+  position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 285px;
+
+    height: 100vh;
+
+    z-index: 3000;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 90px 18px 25px;
+
+    background:
+      linear-gradient(
+        180deg,
+        #101d35 0%,
+        #0b1528 100%
+      );
+
+    box-shadow:
+      15px 0 45px rgba(0, 0, 0, 0.22);
+
+    box-sizing: border-box;
+
+    animation: sidebarOpen 0.25s ease;
+}
+
+.navbar-mobile-menu .navbar-menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  background: #eef3ff;
+  color: #315be8;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.navbar-mobile-menu[dir="rtl"] {
+  left: auto;
+  right: 0;
+  animation-name: sidebarOpenRtl;
+}
+
+@keyframes sidebarOpenRtl {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes sidebarOpen {
+  from {
+    transform: translateX(-100%);
+  }
+
+    to {
+      transform: translateX(0);
+    }
+}
+
+
+/* SIDEBAR LINKS */
+
+.navbar-mobile-menu a,
+.navbar-mobile-menu button {
+  width: 100%;
+  min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 17px;
+
+    margin-bottom: 7px;
+
+    border: 0;
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: #dbe5f8;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      padding-left 0.2s ease;
+}
+
+.navbar-mobile-menu a:hover,
+.navbar-mobile-menu button:hover {
+  background: rgba(79, 117, 205, 0.18);
+  color: white;
+
+    padding-left: 21px;
+}
+
+
+/* SIDEBAR LOGOUT */
+
+.navbar-mobile-menu .mobile-logout {
+  margin-top: auto;
+
+    color: #ffb4b0;
+
+    background: rgba(255, 80, 80, 0.07);
+}
+
+.navbar-mobile-menu .mobile-logout:hover {
+  color: #fff;
+
+    background: #d92d20;
+}
+
+/* =====================================================
+   SIDEBAR OVERLAY
+===================================================== */
+
+/*
+  ‫ چون‬JSX ‫ فعلی‬overlay ،‫جدا ندارد‬
+  ‫ خود‬Sidebar ‫به صورت مستقل باز میشود‬.
+*/
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+      padding: 0 18px;
+    }
+
+    .navbar-brand {
+      font-size: 17px;
+    }
+
+    .navbar-dashboard {
+      padding: 0 10px;
+      font-size: 12px;
+    }
+
+    .navbar-language {
+      padding: 0 9px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .navbar {
+      height: 64px;
+      padding: 0 14px;
+    }
+
+    .navbar-left {
+      gap: 11px;
+    }
+
+    .navbar-brand span {
+      display: none;
+    }
+
+    .navbar-right {
+      gap: 6px;
+    }
+
+    /*
+      Dashboard‫ها روی موبایل از نوار باال‬
+      ‫ حذف میشوند ولی داخل‬Sidebar ‫هستند‬.
+    */
+
+    .navbar-dashboard {
+      display: none;
+    }
+
+    .navbar-language {
+      font-size: 0;
+      width: 40px;
+      padding: 0;
+    }
+
+    .navbar-language::before {
+      content: "🌐";
+      font-size: 17px;
+    }
+
+    .navbar-avatar {
+      width: 39px;
+      height: 39px;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .navbar-mobile-menu {
+      width: 275px;
+    }
+
+    .navbar-right {
+      gap: 4px;
+    }
+
+    .navbar-login-link,
+    .navbar-register-link {
+      padding: 0 9px;
+      font-size: 11px;
+    }
+}
+
+/* =========================
+   CUSTOMER NOTIFICATIONS
+========================= */
+.navbar-notifications {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-notification-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e1e7f0;
+  border-radius: 10px;
+  background: #f8faff;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.navbar-notification-button:hover {
+  background: #edf3ff;
+}
+
+.navbar-notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: #dc2626;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 900;
+}
+
+.navbar-notification-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 340px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(16, 35, 65, 0.15);
+  z-index: 4000;
+}
+
+.navbar-notification-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px 10px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.navbar-notification-title strong {
+  color: #17243d;
+  font-size: 13px;
+}
+
+.navbar-notification-title span {
+  color: #2563eb;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.navbar-notification-empty {
+  padding: 25px 12px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.navbar-notification-item {
+  position: relative;
+  margin-top: 7px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.navbar-notification-item.unread {
+  border: 1px solid #dbeafe;
+  background: #eff6ff;
+}
+
+.navbar-notification-item.read {
+  opacity: .72;
+}
+
+.navbar-notification-item strong {
+  display: block;
+  color: #172033;
+  font-size: 11px;
+}
+
+.navbar-notification-item p {
+  margin: 4px 0;
+  color: #475569;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.navbar-notification-item small {
+  display: block;
+  color: #94a3b8;
+  font-size: 8px;
+}
+
+.navbar-notification-item button {
+  margin-top: 7px;
+  padding: 5px 7px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #fff;
+  color: #2563eb;
+  font-size: 8px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.navbar-notification-footer {
+  display: block;
+  margin-top: 8px;
+  padding: 9px;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #2563eb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .navbar-notification-dropdown {
+    right: -50px;
+    width: min(340px, calc(100vw - 28px));
+  }
+
+  .navbar-notification-button {
+    width: 39px;
+    height: 39px;
+  }
+}
+.navbar-notifications {
+  position: relative;
+}
+
+.navbar-notification-dropdown {
+  right: 0;
+  left: auto;
+  width: min(360px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  box-sizing: border-box;
+}
+
+.navbar[dir="rtl"] .navbar-notification-dropdown {
+  position: fixed;
+  top: 112px;
+  right: auto;
+  left: 16px;
+  text-align: right;
+}
+
+.navbar-notification-item,
+.navbar-notification-title,
+.navbar-notification-empty {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,40 @@
+export const translations = {
+  fa: {
+    title: "بازار خدمات محلی و خانگی",
+    searchPlaceholder: "جستجوی حرفه (مانند: برق‌کار، نلدوان) یا منطقه…",
+    all: "همه",
+    electrician: "برق‌کار",
+    plumber: "نلدوان",
+    carpenter: "نجار",
+    painter: "نقاش",
+    repairs: "تعمیرات",
+    skills: "حرفه‌ها",
+    location: "موقعیت",
+    whatsapp: "واتساپ",
+    call: "تماس تلفنی",
+    login: "ورود / ثبت‌نام",
+    providerDashboard: "پنل ارائه‌دهندهٔ خدمات",
+    adminDashboard: "پنل مدیریت",
+    reviews: "دیدگاه",
+    notFound: "هیچ ارائه‌دهندهٔ خدماتی پیدا نشد."
+  },
+  en: {
+    title: "Home and Local Services Marketplace",
+    searchPlaceholder: "Search skill (e.g. Electrician, Plumber) or area...",
+    all: "All",
+    electrician: "Electrician",
+    plumber: "Plumber",
+    carpenter: "Carpenter",
+    painter: "Painter",
+    repairs: "Repairs",
+    skills: "Skills",
+    location: "Location",
+    whatsapp: "WhatsApp",
+    call: "Call",
+    login: "Login / Register",
+    providerDashboard: "Provider Dashboard",
+    adminDashboard: "Admin Dashboard",
+    reviews: "reviews",
+    notFound: "No service providers found."
+  }
+};
